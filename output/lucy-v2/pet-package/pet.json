@@ -1,0 +1,6 @@
+{
+  "id": "lucy-v2",
+  "displayName": "Lucy v2",
+  "description": "A neon cyberpunk Codex pet based on a user-supplied Lucy base image.",
+  "spritesheetPath": "spritesheet.webp"
+}

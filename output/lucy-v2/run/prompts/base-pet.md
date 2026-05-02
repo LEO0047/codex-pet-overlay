@@ -1,0 +1,16 @@
+Create a single clean reference sprite for a Codex app digital pet named Lucy v2.
+
+Pet: Lucy v2, an adult non-sexual neon cyberpunk heroine desktop pet using the user-supplied canonical base image exactly as the identity source. Preserve the same tall humanoid proportions, stern cool face, pale pink and ice-blue bob hair with one longer front lock, white off-shoulder cropped jacket with black shoulder straps, dark glossy bodysuit, white shorts, black knee-high cyber boots, red/cyan/magenta accents, black belt, stable buckle, and exactly one black rectangular pouch on the same side as the supplied base..
+Style contract: Tall user-supplied-base Lucy Codex pet sprite style: adult non-sexual full-body Lucy silhouette, not chibi and not mascot, preserving the exact high-waisted tall humanoid proportions, face, hairstyle, outfit geometry, belt, pouch, and glossy neon cyber material cues from the canonical base image. Use clean readable 192x208 sprite proportions, strong silhouette, controlled details, stable outfit geometry, dark readable outline, simplified cel-anime forms, and no scenery. Additional user style notes: Do not chibify and do not make a mascot. Keep the supplied base proportions and identity as the highest-priority canonical reference. Use clean full-body sprite silhouettes, simplified enough for 192x208 readability, neon magenta/cyan rim lighting, glossy cyber material cues, flat chroma-key background, no city, no rain, no logos, no text. Preserve the same belt, pouch, jacket shoulder straps, hair color zones, boots, and outfit in every frame..
+
+Use this prompt as an authoritative sprite-production spec. Do not expand it into marketing artwork, a city scene, UI art, a logo, or a decorative poster; keep it as clean chroma-key sprite production art for a desktop pet.
+
+Output one centered full-body pet sprite pose only, on a perfectly flat pure user-selected #00FF00 chroma-key background. The pet must be fully visible, readable as a tiny digital pet, and suitable for animation into a 192x208 sprite cell. Do not include scenery, text, labels, borders, checkerboard transparency, detached effects, shadows, glows, or extra props not present in the reference unless explicitly requested. Do not use #00FF00, pure user-selected, or colors close to that chroma key in the pet, prop, highlights, or effects.
+
+Lucy v2 hard identity lock for this run:
+- The supplied base image is the highest-priority canonical identity reference. Do not generate a new base design.
+- Never chibify Lucy and never convert her into a non-human mascot.
+- Preserve the base image's tall humanoid proportions, stern cool face, pale pink/ice-blue bob hair, and one longer front lock.
+- Belt/pouch canonical rule: black belt with stable buckle position and exactly one black rectangular pouch on the same side as the supplied base; never duplicate it, remove it, resize it heavily, or swap sides within a row.
+- Preserve the white off-shoulder cropped jacket, black shoulder straps, dark glossy bodysuit, white shorts, black knee-high cyber boots, red accent tabs, and cyan/magenta rim lighting.
+- If a pose would obscure the pouch, keep the belt geometry and pouch-side readable rather than inventing a different accessory.

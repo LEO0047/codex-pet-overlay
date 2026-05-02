@@ -19,8 +19,12 @@ if ! swift build -c "$BUILD_CONFIG" --product "$PRODUCT_NAME" >"$SPM_LOG" 2>&1; 
   mkdir -p "$ROOT_DIR/.build/$BUILD_CONFIG"
   # Keep the source layout SwiftPM-compatible while supporting Command Line Tools
   # installations where the PackageDescription manifest API is broken.
+  SWIFT_SOURCES=()
+  while IFS= read -r source_file; do
+    SWIFT_SOURCES+=("$source_file")
+  done < <(find "$ROOT_DIR/Sources/CodexPetOverlay" -name '*.swift' | sort)
   swiftc -O -parse-as-library \
-    $(find "$ROOT_DIR/Sources/CodexPetOverlay" -name '*.swift' | sort) \
+    "${SWIFT_SOURCES[@]}" \
     -o "$ROOT_DIR/.build/$BUILD_CONFIG/$PRODUCT_NAME" \
     -framework AppKit \
     -framework SwiftUI \
