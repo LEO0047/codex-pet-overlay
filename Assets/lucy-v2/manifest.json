@@ -1,0 +1,15 @@
+{
+  "id": "lucy-v2",
+  "displayName": "Lucy v2",
+  "description": "A neon cyberpunk Codex pet based on a user-supplied Lucy base image.",
+  "spritesheetPath": "spritesheet.webp",
+  "atlas": {
+    "width": 1536,
+    "height": 1872,
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208
+  },
+  "defaultScale": 2.0
+}

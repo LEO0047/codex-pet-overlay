@@ -1,0 +1,20 @@
+{
+  "rules": [
+    {
+      "state": "working",
+      "matchAny": ["Running", "Executing", "Thinking", "Working", "Loading lessons", "ToolCall"]
+    },
+    {
+      "state": "reviewing",
+      "matchAny": ["Review", "Approve", "Diff", "Changes", "Verification"]
+    },
+    {
+      "state": "failed",
+      "matchAny": ["Error", "Failed", "Blocked", "Permission"]
+    },
+    {
+      "state": "idle",
+      "matchAny": ["Ready", "Idle"]
+    }
+  ]
+}
