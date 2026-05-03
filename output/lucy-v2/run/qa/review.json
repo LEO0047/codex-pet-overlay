@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "frames_root": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames",
+  "frames_root": "output/lucy-v2/run/frames",
   "errors": [],
   "warnings": [],
   "rows": [
@@ -15,7 +15,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/00.png",
+          "file": "output/lucy-v2/run/frames/idle/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6968,
@@ -30,7 +30,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/01.png",
+          "file": "output/lucy-v2/run/frames/idle/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6989,
@@ -45,7 +45,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/02.png",
+          "file": "output/lucy-v2/run/frames/idle/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7013,
@@ -60,7 +60,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/03.png",
+          "file": "output/lucy-v2/run/frames/idle/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6933,
@@ -75,7 +75,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/04.png",
+          "file": "output/lucy-v2/run/frames/idle/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6964,
@@ -90,7 +90,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/05.png",
+          "file": "output/lucy-v2/run/frames/idle/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6997,
@@ -116,7 +116,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/00.png",
+          "file": "output/lucy-v2/run/frames/running-right/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8154,
@@ -131,7 +131,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/01.png",
+          "file": "output/lucy-v2/run/frames/running-right/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7435,
@@ -146,7 +146,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/02.png",
+          "file": "output/lucy-v2/run/frames/running-right/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8283,
@@ -161,7 +161,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/03.png",
+          "file": "output/lucy-v2/run/frames/running-right/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7113,
@@ -176,7 +176,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/04.png",
+          "file": "output/lucy-v2/run/frames/running-right/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7452,
@@ -191,7 +191,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/05.png",
+          "file": "output/lucy-v2/run/frames/running-right/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7341,
@@ -206,7 +206,7 @@
         },
         {
           "index": 6,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/06.png",
+          "file": "output/lucy-v2/run/frames/running-right/06.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8177,
@@ -221,7 +221,7 @@
         },
         {
           "index": 7,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/07.png",
+          "file": "output/lucy-v2/run/frames/running-right/07.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8745,
@@ -247,7 +247,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/00.png",
+          "file": "output/lucy-v2/run/frames/running-left/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8803,
@@ -262,7 +262,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/01.png",
+          "file": "output/lucy-v2/run/frames/running-left/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8559,
@@ -277,7 +277,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/02.png",
+          "file": "output/lucy-v2/run/frames/running-left/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8672,
@@ -292,7 +292,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/03.png",
+          "file": "output/lucy-v2/run/frames/running-left/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 9102,
@@ -307,7 +307,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/04.png",
+          "file": "output/lucy-v2/run/frames/running-left/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8203,
@@ -322,7 +322,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/05.png",
+          "file": "output/lucy-v2/run/frames/running-left/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 8717,
@@ -337,7 +337,7 @@
         },
         {
           "index": 6,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/06.png",
+          "file": "output/lucy-v2/run/frames/running-left/06.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7940,
@@ -352,7 +352,7 @@
         },
         {
           "index": 7,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/07.png",
+          "file": "output/lucy-v2/run/frames/running-left/07.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 9263,
@@ -378,7 +378,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waving/00.png",
+          "file": "output/lucy-v2/run/frames/waving/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7225,
@@ -393,7 +393,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waving/01.png",
+          "file": "output/lucy-v2/run/frames/waving/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 5930,
@@ -408,7 +408,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waving/02.png",
+          "file": "output/lucy-v2/run/frames/waving/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7190,
@@ -423,7 +423,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waving/03.png",
+          "file": "output/lucy-v2/run/frames/waving/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7253,
@@ -449,7 +449,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/00.png",
+          "file": "output/lucy-v2/run/frames/jumping/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 11250,
@@ -464,7 +464,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/01.png",
+          "file": "output/lucy-v2/run/frames/jumping/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7771,
@@ -479,7 +479,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/02.png",
+          "file": "output/lucy-v2/run/frames/jumping/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6917,
@@ -494,7 +494,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/03.png",
+          "file": "output/lucy-v2/run/frames/jumping/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6806,
@@ -509,7 +509,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/04.png",
+          "file": "output/lucy-v2/run/frames/jumping/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 11284,
@@ -535,7 +535,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/00.png",
+          "file": "output/lucy-v2/run/frames/failed/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6684,
@@ -550,7 +550,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/01.png",
+          "file": "output/lucy-v2/run/frames/failed/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6633,
@@ -565,7 +565,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/02.png",
+          "file": "output/lucy-v2/run/frames/failed/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6844,
@@ -580,7 +580,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/03.png",
+          "file": "output/lucy-v2/run/frames/failed/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6894,
@@ -595,7 +595,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/04.png",
+          "file": "output/lucy-v2/run/frames/failed/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7057,
@@ -610,7 +610,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/05.png",
+          "file": "output/lucy-v2/run/frames/failed/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6704,
@@ -625,7 +625,7 @@
         },
         {
           "index": 6,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/06.png",
+          "file": "output/lucy-v2/run/frames/failed/06.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6800,
@@ -640,7 +640,7 @@
         },
         {
           "index": 7,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/07.png",
+          "file": "output/lucy-v2/run/frames/failed/07.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6585,
@@ -666,7 +666,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/00.png",
+          "file": "output/lucy-v2/run/frames/waiting/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6836,
@@ -681,7 +681,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/01.png",
+          "file": "output/lucy-v2/run/frames/waiting/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6310,
@@ -696,7 +696,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/02.png",
+          "file": "output/lucy-v2/run/frames/waiting/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6814,
@@ -711,7 +711,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/03.png",
+          "file": "output/lucy-v2/run/frames/waiting/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6741,
@@ -726,7 +726,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/04.png",
+          "file": "output/lucy-v2/run/frames/waiting/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6538,
@@ -741,7 +741,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/05.png",
+          "file": "output/lucy-v2/run/frames/waiting/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6343,
@@ -767,7 +767,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/00.png",
+          "file": "output/lucy-v2/run/frames/running/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7982,
@@ -782,7 +782,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/01.png",
+          "file": "output/lucy-v2/run/frames/running/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7103,
@@ -797,7 +797,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/02.png",
+          "file": "output/lucy-v2/run/frames/running/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7589,
@@ -812,7 +812,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/03.png",
+          "file": "output/lucy-v2/run/frames/running/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7663,
@@ -827,7 +827,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/04.png",
+          "file": "output/lucy-v2/run/frames/running/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7503,
@@ -842,7 +842,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/05.png",
+          "file": "output/lucy-v2/run/frames/running/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 7113,
@@ -868,7 +868,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/00.png",
+          "file": "output/lucy-v2/run/frames/review/00.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6430,
@@ -883,7 +883,7 @@
         },
         {
           "index": 1,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/01.png",
+          "file": "output/lucy-v2/run/frames/review/01.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6780,
@@ -898,7 +898,7 @@
         },
         {
           "index": 2,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/02.png",
+          "file": "output/lucy-v2/run/frames/review/02.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6226,
@@ -913,7 +913,7 @@
         },
         {
           "index": 3,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/03.png",
+          "file": "output/lucy-v2/run/frames/review/03.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6302,
@@ -928,7 +928,7 @@
         },
         {
           "index": 4,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/04.png",
+          "file": "output/lucy-v2/run/frames/review/04.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6292,
@@ -943,7 +943,7 @@
         },
         {
           "index": 5,
-          "file": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/05.png",
+          "file": "output/lucy-v2/run/frames/review/05.png",
           "width": 192,
           "height": 208,
           "nontransparent_pixels": 6803,

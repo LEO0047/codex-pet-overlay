@@ -27,7 +27,6 @@ final class AppSettings: ObservableObject {
 
     @Published var scale: Double {
         didSet {
-            scale = min(4.0, max(1.0, scale))
             persist("scale", scale)
             onChange?()
         }
@@ -78,7 +77,7 @@ final class AppSettings: ObservableObject {
 
     init(defaults: UserDefaults = .standard) {
         petFolderPath = defaults.string(forKey: "petFolderPath") ?? ""
-        scale = defaults.object(forKey: "scale") as? Double ?? 2.0
+        scale = Self.clampedScale(defaults.object(forKey: "scale") as? Double ?? 2.0)
         clickThrough = defaults.object(forKey: "clickThrough") as? Bool ?? false
         showStatusBubble = defaults.object(forKey: "showStatusBubble") as? Bool ?? true
         stateDetectionEnabled = defaults.object(forKey: "stateDetectionEnabled") as? Bool ?? true
@@ -94,5 +93,9 @@ final class AppSettings: ObservableObject {
 
     private func persist(_ key: String, _ value: Any) {
         UserDefaults.standard.set(value, forKey: key)
+    }
+
+    private static func clampedScale(_ value: Double) -> Double {
+        min(4.0, max(1.0, value))
     }
 }

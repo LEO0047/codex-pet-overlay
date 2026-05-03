@@ -1,0 +1,679 @@
+{
+  "schema_version": 1,
+  "kind": "codex-pet-overlay-highres-atlas",
+  "source_run_dir": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run",
+  "sourceScale": 2,
+  "defaultDisplayScale": 1.0,
+  "columns": 8,
+  "rows": 9,
+  "cellWidth": 384,
+  "cellHeight": 416,
+  "width": 3072,
+  "height": 3744,
+  "stateRowMap": {
+    "idle": 0,
+    "running-right": 1,
+    "running-left": 2,
+    "waving": 3,
+    "jumping": 4,
+    "failed": 5,
+    "waiting": 6,
+    "running": 7,
+    "review": 8
+  },
+  "chroma_key_rgb": [
+    0,
+    255,
+    0
+  ],
+  "chroma_threshold": 42,
+  "allow_upscale": false,
+  "outputs": {
+    "png": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/overlay-highres/2x/spritesheet.png",
+    "webp": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/overlay-highres/2x/spritesheet.webp"
+  },
+  "rows_detail": [
+    {
+      "state": "idle",
+      "row": 0,
+      "frames": 6,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/idle.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            114,
+            32,
+            270,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            113,
+            32,
+            270,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            114,
+            32,
+            270,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            114,
+            32,
+            270,
+            384
+          ]
+        },
+        {
+          "index": 4,
+          "nonempty": true,
+          "bbox": [
+            113,
+            32,
+            270,
+            384
+          ]
+        },
+        {
+          "index": 5,
+          "nonempty": true,
+          "bbox": [
+            114,
+            32,
+            270,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frames": 8,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/running-right.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            137,
+            32,
+            246,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            137,
+            32,
+            246,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            137,
+            32,
+            246,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            137,
+            32,
+            246,
+            384
+          ]
+        },
+        {
+          "index": 4,
+          "nonempty": true,
+          "bbox": [
+            137,
+            32,
+            246,
+            384
+          ]
+        },
+        {
+          "index": 5,
+          "nonempty": true,
+          "bbox": [
+            137,
+            32,
+            246,
+            384
+          ]
+        },
+        {
+          "index": 6,
+          "nonempty": true,
+          "bbox": [
+            137,
+            32,
+            246,
+            384
+          ]
+        },
+        {
+          "index": 7,
+          "nonempty": true,
+          "bbox": [
+            137,
+            32,
+            246,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frames": 8,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/running-left.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            142,
+            32,
+            241,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            142,
+            32,
+            241,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            142,
+            32,
+            241,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            142,
+            32,
+            241,
+            384
+          ]
+        },
+        {
+          "index": 4,
+          "nonempty": true,
+          "bbox": [
+            142,
+            32,
+            241,
+            384
+          ]
+        },
+        {
+          "index": 5,
+          "nonempty": true,
+          "bbox": [
+            142,
+            32,
+            241,
+            384
+          ]
+        },
+        {
+          "index": 6,
+          "nonempty": true,
+          "bbox": [
+            142,
+            32,
+            241,
+            384
+          ]
+        },
+        {
+          "index": 7,
+          "nonempty": true,
+          "bbox": [
+            142,
+            32,
+            241,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frames": 4,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/waving.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            107,
+            32,
+            277,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            107,
+            32,
+            277,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            107,
+            32,
+            277,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            107,
+            32,
+            277,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frames": 5,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/jumping.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            98,
+            32,
+            286,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            98,
+            32,
+            285,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            98,
+            32,
+            286,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            98,
+            32,
+            285,
+            384
+          ]
+        },
+        {
+          "index": 4,
+          "nonempty": true,
+          "bbox": [
+            98,
+            32,
+            286,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frames": 8,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/failed.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            126,
+            32,
+            258,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            126,
+            32,
+            258,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            126,
+            32,
+            258,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            126,
+            32,
+            258,
+            384
+          ]
+        },
+        {
+          "index": 4,
+          "nonempty": true,
+          "bbox": [
+            126,
+            32,
+            258,
+            384
+          ]
+        },
+        {
+          "index": 5,
+          "nonempty": true,
+          "bbox": [
+            126,
+            32,
+            258,
+            384
+          ]
+        },
+        {
+          "index": 6,
+          "nonempty": true,
+          "bbox": [
+            126,
+            32,
+            258,
+            384
+          ]
+        },
+        {
+          "index": 7,
+          "nonempty": true,
+          "bbox": [
+            126,
+            32,
+            258,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frames": 6,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/waiting.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 4,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 5,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frames": 6,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/running.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 4,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 5,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frames": 6,
+      "source": "/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay/output/lucy-v2/run/decoded/review.png",
+      "frames_detail": [
+        {
+          "index": 0,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 1,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 2,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 3,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 4,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        },
+        {
+          "index": 5,
+          "nonempty": true,
+          "bbox": [
+            104,
+            32,
+            280,
+            384
+          ]
+        }
+      ]
+    }
+  ]
+}

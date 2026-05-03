@@ -1,4 +1,0 @@
-display_name: Hatch Pet Direct Base
-short_description: Hatch Codex pets from an approved user-supplied base image.
-default_prompt: Create a Codex pet from this canonical base image without regenerating the base; preserve identity and use imagegen only for animation rows.
-

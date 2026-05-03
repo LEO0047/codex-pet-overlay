@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "run_dir": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2",
-  "spritesheet": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/final/spritesheet.webp",
-  "validation": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/final/validation.json",
-  "contact_sheet": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/qa/contact-sheet.png",
-  "review": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/qa/review.json",
-  "videos": "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/qa/videos",
-  "package": "/Users/leo/.codex/pets/lucy-v2"
+  "run_dir": "output/lucy-v2/run",
+  "spritesheet": "output/lucy-v2/run/final/spritesheet.webp",
+  "validation": "output/lucy-v2/run/final/validation.json",
+  "contact_sheet": "output/lucy-v2/run/qa/contact-sheet.png",
+  "review": "output/lucy-v2/run/qa/review.json",
+  "videos": "output/lucy-v2/run/qa/videos",
+  "package": "output/lucy-v2/pet-package"
 }

@@ -1,12 +1,13 @@
 # Codex Pet Overlay
 
-Codex Pet Overlay is an unofficial macOS companion app for the Codex app.
+Codex Pet Overlay is an unofficial macOS desktop character overlay that can
+coordinate with the Codex app.
 It does not modify, inject into, or patch Codex.app.
 It only observes public window/accessibility state when permission is granted.
 
-The app displays a larger desktop overlay pet using the same Codex pet atlas
-shape. It ships with a Lucy v2 demo asset and can also load a local pet folder
-such as `~/.codex/pets/lucy`.
+The project is moving toward its own overlay-native high-resolution character
+asset system. Codex-compatible pet atlases remain useful as a bridge and
+fallback, but they are no longer the main product model.
 
 ## Features
 
@@ -32,18 +33,48 @@ If the local Command Line Tools installation has a broken SwiftPM manifest API,
 the script falls back to direct `swiftc` compilation while keeping the package
 layout intact.
 
-## Pet Contract
+## Asset Model
 
-Custom pet folders must contain `spritesheet.webp` using the Codex pet atlas
-contract:
+The product has two asset layers:
+
+- **Overlay-native assets:** the primary desktop display path, described by this
+  repo's high-resolution manifest and future runtime loader.
+- **Codex-compatible exports:** optional compatibility artifacts using the Codex
+  pet atlas contract.
+
+The compatibility contract is:
 
 - Atlas: `1536x1872`
 - Grid: `8 columns x 9 rows`
 - Cell: `192x208`
 - Background: transparent
 
-If a selected folder does not match this contract, the app shows a clear error
-instead of silently failing.
+If a selected compatibility folder does not match this contract, the app shows a
+clear error instead of silently failing.
+
+The desktop overlay direction is different from the Codex compatibility
+contract: large on-screen characters should use overlay-native high-resolution
+assets when available, with the Codex atlas kept as a compatibility fallback.
+See `docs/overlay-high-resolution-assets.md`.
+
+## Lucy v2 Artifacts
+
+The bundled Lucy v2 demo asset is mirrored in a few repo artifacts so future
+contributors can inspect the package and QA trail without rerunning the pet
+generation pipeline:
+
+- `output/lucy-v2/pet-package/` contains the distributable pet folder shape:
+  `spritesheet.webp` plus `pet.json`.
+- `output/lucy-v2/run/final/validation.json` records atlas validation results
+  for the final spritesheet.
+- `output/lucy-v2/run/qa/review.json` records per-row and per-frame QA metadata.
+- `output/lucy-v2/run/overlay-highres/2x/` contains the current experimental
+  overlay-specific high-resolution atlas and manifest.
+- `skills/codex-pet-overlay-runtime/` documents the app maintenance workflow
+  for Settings, click-through recovery, Accessibility, rendering, memory, build,
+  and launch work.
+- `skills/pet-overlay-direct-base-hatch/` documents the controlled direct-base workflow
+  used when creating or repairing a pet from an already-approved base image.
 
 ## Accessibility
 

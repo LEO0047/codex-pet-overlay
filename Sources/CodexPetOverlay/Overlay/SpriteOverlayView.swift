@@ -23,7 +23,10 @@ final class SpriteOverlayView: NSView {
     }
 
     var showsStatusBubble: Bool {
-        didSet { needsDisplay = true }
+        didSet {
+            updateFrameSize()
+            needsDisplay = true
+        }
     }
 
     var statusText = "Idle" {
@@ -69,15 +72,12 @@ final class SpriteOverlayView: NSView {
             width: atlas.cellSize.width * scale,
             height: spriteHeight
         )
-        let sourceRect = atlas.sourceRect(state: animationState, frameIndex: frameIndex)
-        atlas.image.draw(
-            in: spriteRect,
-            from: sourceRect,
-            operation: .sourceOver,
-            fraction: 1.0,
-            respectFlipped: false,
-            hints: [.interpolation: NSImageInterpolation.none]
-        )
+        if let context = NSGraphicsContext.current?.cgContext {
+            context.saveGState()
+            context.interpolationQuality = .high
+            context.draw(atlas.frameImage(state: animationState, frameIndex: frameIndex), in: spriteRect)
+            context.restoreGState()
+        }
 
         guard showsStatusBubble else { return }
         drawStatusBubble(above: spriteRect)

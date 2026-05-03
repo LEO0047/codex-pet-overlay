@@ -4,19 +4,22 @@
 
 This repo is a first-pass MVP, not a polished product.
 
+Important direction: this project is becoming an independent overlay-native
+desktop character system. It can coordinate with Codex, but it should not be
+treated as a thin wrapper around the original Codex custom pet workflow.
+
 Public repo:
 
 - GitHub: https://github.com/LEO0047/codex-pet-overlay
-- Local iCloud path: `/Users/leo/Library/Mobile Documents/com~apple~CloudDocs/Coding/Projects/codex-pet-overlay`
-- Original scratch path: `/Users/leo/Documents/Codex/2026-05-03/files-mentioned-by-the-user-2026/codex-pet-overlay`
-- Current commit: `14f0cc6c8ef03f1916c3be527ac97d7b70bd0764`
+- Local checkout: this repository directory
+- Current commit: check the current checkout with `git rev-parse HEAD`
 
 What exists:
 
 - Native Swift/AppKit macOS Dock app entrypoint.
 - Transparent always-on-top overlay window.
 - Lucy v2 bundled asset under `Assets/lucy-v2/`.
-- Basic sprite animation from the Codex pet atlas.
+- Basic sprite animation from the Codex pet atlas compatibility path.
 - Basic Settings window.
 - Right-click menu on the pet when click-through is off.
 - Click-through toggle using `NSWindow.ignoresMouseEvents`.
@@ -35,6 +38,13 @@ The app is intentionally functional but rough. The initial goal was to prove the
 4. Publish a public repo.
 
 It does not yet feel like a delightful desktop pet. The interaction model, animation behavior, and Codex state sync need product work.
+
+Current product direction update:
+
+- Use overlay-specific high-resolution character assets for the desktop overlay as the primary product path.
+- Keep the standard Codex-compatible pet package only as a compatibility/export layer when useful.
+- Do not depend on enlarging `192x208` Codex pet cells for the main large Lucy experience.
+- Do not use the original `~/.codex/skills/hatch-pet` as the authority for this repo's future asset pipeline.
 
 ## Build And Run
 
@@ -73,6 +83,14 @@ Main areas:
   AX permission helper, Codex app polling, heuristic state detector.
 - `Sources/CodexPetOverlay/Settings/`
   Settings model and SwiftUI settings view.
+- `skills/codex-pet-overlay-runtime/`
+  Repo-local skill for app runtime, Settings, click-through, Accessibility, rendering, memory, build, and launch work.
+- `skills/pet-overlay-direct-base-hatch/`
+  Repo-local skill for overlay character asset generation, approved-base workflows, Lucy asset repair, high-resolution overlay output, and optional Codex-compatible export.
+- `AGENTS.md`
+  Root instructions for future AI agents working in this repo.
+- `docs/overlay-high-resolution-assets.md`
+  Contract notes for the overlay-specific high-resolution character asset direction.
 
 The app currently copies `Assets/` and `config/` into `Contents/Resources/` during bundle creation. Runtime asset loading assumes the `.app` bundle path, not raw executable launch.
 
@@ -80,6 +98,8 @@ The app currently copies `Assets/` and `config/` into `Contents/Resources/` duri
 
 High-priority issues:
 
+- Runtime does not yet load overlay-specific high-resolution assets. It still loads the standard Codex `spritesheet.webp` and hard-codes `192x208` cells.
+- Runtime/docs and hatch output have row-order drift risk. Future runtime work should make a manifest `stateRowMap` the source of truth.
 - Changing `petFolderPath` in Settings does not hot-reload the sprite. It likely requires restart right now.
 - Manual animation selection can be overridden by Accessibility detection when detection is enabled.
 - Accessibility sync is shallow polling, not a robust observer.
@@ -127,12 +147,18 @@ Do these before adding more novelty:
    - Pause/play animation control.
    - Optional "snap to screen edge" or "stay above Dock" behavior.
 
-5. Clean up build story.
+5. Add overlay high-resolution asset loading.
+   - Add a manifest/descriptor model that can declare `cellWidth`, `cellHeight`, frame counts, `sourceScale`, `defaultDisplayScale`, and `stateRowMap`.
+   - Load overlay high-res assets before falling back to the standard Codex atlas.
+   - Keep `sourceScale` separate from user-facing display scale.
+   - Update Settings to show which asset variant is currently loaded.
+
+6. Clean up build story.
    - Test on a machine with full Xcode or healthy SwiftPM.
    - Decide whether to keep direct `swiftc` fallback permanently.
    - Add GitHub Actions only once the SwiftPM path is known to work in CI.
 
-6. Add release packaging.
+7. Add release packaging.
    - Create zipped `.app` artifact.
    - Add versioning.
    - Decide whether to notarize later.
@@ -164,4 +190,3 @@ Then manually verify:
 - Keep Codex integration read-only.
 - Keep `Lucy v2` asset licensing separate from MIT code licensing unless the owner explicitly changes that policy.
 - Do not push new changes without explicit user approval.
-

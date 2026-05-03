@@ -13,111 +13,111 @@
     {
       "state": "idle",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/03.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/04.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/idle/05.png"
+        "output/lucy-v2/run/frames/idle/00.png",
+        "output/lucy-v2/run/frames/idle/01.png",
+        "output/lucy-v2/run/frames/idle/02.png",
+        "output/lucy-v2/run/frames/idle/03.png",
+        "output/lucy-v2/run/frames/idle/04.png",
+        "output/lucy-v2/run/frames/idle/05.png"
       ],
       "method": "components"
     },
     {
       "state": "running-right",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/03.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/04.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/05.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/06.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-right/07.png"
+        "output/lucy-v2/run/frames/running-right/00.png",
+        "output/lucy-v2/run/frames/running-right/01.png",
+        "output/lucy-v2/run/frames/running-right/02.png",
+        "output/lucy-v2/run/frames/running-right/03.png",
+        "output/lucy-v2/run/frames/running-right/04.png",
+        "output/lucy-v2/run/frames/running-right/05.png",
+        "output/lucy-v2/run/frames/running-right/06.png",
+        "output/lucy-v2/run/frames/running-right/07.png"
       ],
       "method": "components"
     },
     {
       "state": "running-left",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/03.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/04.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/05.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/06.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running-left/07.png"
+        "output/lucy-v2/run/frames/running-left/00.png",
+        "output/lucy-v2/run/frames/running-left/01.png",
+        "output/lucy-v2/run/frames/running-left/02.png",
+        "output/lucy-v2/run/frames/running-left/03.png",
+        "output/lucy-v2/run/frames/running-left/04.png",
+        "output/lucy-v2/run/frames/running-left/05.png",
+        "output/lucy-v2/run/frames/running-left/06.png",
+        "output/lucy-v2/run/frames/running-left/07.png"
       ],
       "method": "components"
     },
     {
       "state": "waving",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waving/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waving/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waving/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waving/03.png"
+        "output/lucy-v2/run/frames/waving/00.png",
+        "output/lucy-v2/run/frames/waving/01.png",
+        "output/lucy-v2/run/frames/waving/02.png",
+        "output/lucy-v2/run/frames/waving/03.png"
       ],
       "method": "components"
     },
     {
       "state": "jumping",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/03.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/jumping/04.png"
+        "output/lucy-v2/run/frames/jumping/00.png",
+        "output/lucy-v2/run/frames/jumping/01.png",
+        "output/lucy-v2/run/frames/jumping/02.png",
+        "output/lucy-v2/run/frames/jumping/03.png",
+        "output/lucy-v2/run/frames/jumping/04.png"
       ],
       "method": "components"
     },
     {
       "state": "failed",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/03.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/04.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/05.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/06.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/failed/07.png"
+        "output/lucy-v2/run/frames/failed/00.png",
+        "output/lucy-v2/run/frames/failed/01.png",
+        "output/lucy-v2/run/frames/failed/02.png",
+        "output/lucy-v2/run/frames/failed/03.png",
+        "output/lucy-v2/run/frames/failed/04.png",
+        "output/lucy-v2/run/frames/failed/05.png",
+        "output/lucy-v2/run/frames/failed/06.png",
+        "output/lucy-v2/run/frames/failed/07.png"
       ],
       "method": "components"
     },
     {
       "state": "waiting",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/03.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/04.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/waiting/05.png"
+        "output/lucy-v2/run/frames/waiting/00.png",
+        "output/lucy-v2/run/frames/waiting/01.png",
+        "output/lucy-v2/run/frames/waiting/02.png",
+        "output/lucy-v2/run/frames/waiting/03.png",
+        "output/lucy-v2/run/frames/waiting/04.png",
+        "output/lucy-v2/run/frames/waiting/05.png"
       ],
       "method": "components"
     },
     {
       "state": "running",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/03.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/04.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/running/05.png"
+        "output/lucy-v2/run/frames/running/00.png",
+        "output/lucy-v2/run/frames/running/01.png",
+        "output/lucy-v2/run/frames/running/02.png",
+        "output/lucy-v2/run/frames/running/03.png",
+        "output/lucy-v2/run/frames/running/04.png",
+        "output/lucy-v2/run/frames/running/05.png"
       ],
       "method": "components"
     },
     {
       "state": "review",
       "frames": [
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/00.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/01.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/02.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/03.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/04.png",
-        "/Users/leo/Documents/Codex/2026-05-02/pet/output/hatch-pet/lucy-v2/frames/review/05.png"
+        "output/lucy-v2/run/frames/review/00.png",
+        "output/lucy-v2/run/frames/review/01.png",
+        "output/lucy-v2/run/frames/review/02.png",
+        "output/lucy-v2/run/frames/review/03.png",
+        "output/lucy-v2/run/frames/review/04.png",
+        "output/lucy-v2/run/frames/review/05.png"
       ],
       "method": "components"
     }

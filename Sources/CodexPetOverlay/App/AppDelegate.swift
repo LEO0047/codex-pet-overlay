@@ -29,14 +29,29 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let appItem = NSMenuItem()
         let appMenu = NSMenu(title: "Codex Pet Overlay")
 
-        appMenu.addItem(NSMenuItem(title: "Settings...", action: #selector(showSettings), keyEquivalent: ","))
-        appMenu.addItem(NSMenuItem(title: "Disable Click-through", action: #selector(disableClickThrough), keyEquivalent: "t"))
+        addRecoveryItems(to: appMenu)
         appMenu.addItem(NSMenuItem.separator())
         appMenu.addItem(NSMenuItem(title: "Quit Codex Pet Overlay", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
 
         appItem.submenu = appMenu
         mainMenu.addItem(appItem)
         NSApp.mainMenu = mainMenu
+    }
+
+    func applicationDockMenu(_ sender: NSApplication) -> NSMenu? {
+        let menu = NSMenu(title: "Codex Pet Overlay")
+        addRecoveryItems(to: menu)
+        return menu
+    }
+
+    private func addRecoveryItems(to menu: NSMenu) {
+        let settingsItem = NSMenuItem(title: "Settings...", action: #selector(showSettings), keyEquivalent: ",")
+        settingsItem.target = self
+        menu.addItem(settingsItem)
+
+        let disableClickThroughItem = NSMenuItem(title: "Disable Click-through", action: #selector(disableClickThrough), keyEquivalent: "t")
+        disableClickThroughItem.target = self
+        menu.addItem(disableClickThroughItem)
     }
 
     private func loadStateDetector() {
@@ -88,6 +103,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func startAccessibilityObserver() {
+        axObserver?.stop()
         axObserver = CodexAccessibilityObserver { [weak self] observedText in
             guard let self, self.settings.stateDetectionEnabled else { return }
             guard AXPermissionManager.isTrusted else {

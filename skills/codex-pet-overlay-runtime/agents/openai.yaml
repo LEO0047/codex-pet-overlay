@@ -1,0 +1,3 @@
+display_name: Codex Pet Overlay Runtime
+short_description: Debug and polish the Codex Pet Overlay macOS app runtime.
+default_prompt: Use this when working on Settings, click-through recovery, Accessibility permission state, overlay rendering, memory, build, or launch issues in the Codex Pet Overlay app.

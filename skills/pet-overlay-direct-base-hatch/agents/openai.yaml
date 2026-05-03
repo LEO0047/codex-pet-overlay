@@ -1,0 +1,3 @@
+display_name: Pet Overlay Direct Base Hatch
+short_description: Create overlay-native high-resolution character assets from an approved base image.
+default_prompt: Create a Codex Pet Overlay high-resolution character asset from this canonical base image; preserve identity and generate any Codex-compatible export only as a secondary artifact.
