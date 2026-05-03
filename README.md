@@ -9,6 +9,32 @@ The project is moving toward its own overlay-native high-resolution character
 asset system. Codex-compatible pet atlases remain useful as a bridge and
 fallback, but they are no longer the main product model.
 
+## Screenshot / GIF Placeholders
+
+Release media is not checked in yet. When screenshots or short demos are ready,
+place them under `docs/media/` and link them here:
+
+- `docs/media/overlay-screenshot.png` for the desktop overlay.
+- `docs/media/settings-screenshot.png` for Settings.
+- `docs/media/codex-sync-demo.gif` for heuristic Codex state changes.
+- `docs/media/click-through-recovery.gif` for recovery from click-through mode.
+
+## Quick Start
+
+```bash
+git clone https://github.com/LEO0047/codex-pet-overlay.git
+cd codex-pet-overlay
+./script/build_and_run.sh --verify
+```
+
+The app launches as a normal macOS Dock app and creates
+`dist/Codex Pet Overlay.app`. The bundled Lucy v2 demo asset is used by default.
+
+Accessibility permission is optional. Without it, the overlay still opens and
+manual animation controls remain available. With it, the app can read public
+Codex window text and choose an animation state using configurable heuristic
+rules.
+
 ## Features
 
 - Native Swift macOS Dock app.
@@ -33,14 +59,31 @@ If the local Command Line Tools installation has a broken SwiftPM manifest API,
 the script falls back to direct `swiftc` compilation while keeping the package
 layout intact.
 
+To build the bundle without launching it, run:
+
+```bash
+./script/make_app_bundle.sh
+```
+
+To create a local release zip without notarization, run:
+
+```bash
+./script/package_release.sh
+```
+
+See `docs/release.md` for the release packaging checklist.
+
 ## Asset Model
 
 The product has two asset layers:
 
-- **Overlay-native assets:** the primary desktop display path, described by this
-  repo's high-resolution manifest and future runtime loader.
+- **Overlay-native high-resolution assets:** the intended primary desktop
+  display path, described by this repo's high-resolution manifest and runtime
+  loader. These assets keep `sourceScale` separate from the on-screen
+  `displayScale`.
 - **Codex-compatible exports:** optional compatibility artifacts using the Codex
-  pet atlas contract.
+  pet atlas contract. They remain useful for fallback rendering, deterministic
+  QA, and compatibility exports.
 
 The compatibility contract is:
 
@@ -56,6 +99,10 @@ The desktop overlay direction is different from the Codex compatibility
 contract: large on-screen characters should use overlay-native high-resolution
 assets when available, with the Codex atlas kept as a compatibility fallback.
 See `docs/overlay-high-resolution-assets.md`.
+
+The runtime now prefers an overlay-specific manifest when available, then falls
+back to the standard Codex-compatible `spritesheet.webp` only when no overlay
+asset exists. Settings shows which asset kind is currently loaded.
 
 ## Lucy v2 Artifacts
 
@@ -78,13 +125,28 @@ generation pipeline:
 
 ## Accessibility
 
-Codex UI detection is heuristic and configurable. If Codex changes its window
-text, update `config/state-rules.json` and rebuild/relaunch the app bundle.
+Codex UI detection is heuristic and configurable. It is not a full AXObserver
+implementation. If Codex changes its window text, update
+`config/state-rules.json` and rebuild/relaunch the app bundle.
 
 The app does not read secrets and does not modify Codex. If Accessibility
 permission is unavailable or revoked, it falls back to manual animation control.
 
+See `docs/accessibility.md` for the permission model.
+
+## Troubleshooting
+
+See `docs/troubleshooting.md` for common issues:
+
+- The app launches but no overlay appears.
+- Lucy looks too large, too small, or blurry.
+- Click-through mode makes the overlay hard to recover.
+- Accessibility permission is needed or was denied.
+- The selected pet folder is invalid or stale.
+- Codex is not running, or heuristic state detection does not change.
+- Green background / chroma key artifacts in capture workflows.
+
 ## License
 
-Code is licensed under MIT. The bundled Lucy v2 asset has separate terms in
-`ASSET_LICENSE`.
+Code is licensed under MIT. The bundled Lucy v2 asset is governed separately by
+`ASSET_LICENSE`; it is not automatically covered by the MIT license.

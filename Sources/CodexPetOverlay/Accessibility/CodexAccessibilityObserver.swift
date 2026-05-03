@@ -1,11 +1,22 @@
 import AppKit
 import ApplicationServices
 
+struct CodexAccessibilityObservation {
+    enum Status {
+        case axPermissionNeeded
+        case codexNotRunning
+        case observingCodex
+    }
+
+    let status: Status
+    let observedText: String?
+}
+
 final class CodexAccessibilityObserver {
     private var timer: Timer?
-    private let onObservation: (String?) -> Void
+    private let onObservation: (CodexAccessibilityObservation) -> Void
 
-    init(onObservation: @escaping (String?) -> Void) {
+    init(onObservation: @escaping (CodexAccessibilityObservation) -> Void) {
         self.onObservation = onObservation
     }
 
@@ -25,7 +36,7 @@ final class CodexAccessibilityObserver {
 
     private func poll() {
         guard AXPermissionManager.isTrusted else {
-            onObservation(nil)
+            onObservation(CodexAccessibilityObservation(status: .axPermissionNeeded, observedText: nil))
             return
         }
 
@@ -33,14 +44,14 @@ final class CodexAccessibilityObserver {
             $0.bundleIdentifier == "com.openai.codex"
         }
         guard let app = apps.first else {
-            onObservation(nil)
+            onObservation(CodexAccessibilityObservation(status: .codexNotRunning, observedText: nil))
             return
         }
 
         let element = AXUIElementCreateApplication(app.processIdentifier)
         var chunks: [String] = []
         collectText(from: element, depth: 0, chunks: &chunks)
-        onObservation(chunks.joined(separator: "\n"))
+        onObservation(CodexAccessibilityObservation(status: .observingCodex, observedText: chunks.joined(separator: "\n")))
     }
 
     private func collectText(from element: AXUIElement, depth: Int, chunks: inout [String]) {

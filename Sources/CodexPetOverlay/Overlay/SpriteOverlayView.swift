@@ -1,11 +1,15 @@
 import AppKit
 
 final class SpriteOverlayView: NSView {
-    private let atlas: SpriteAtlas
+    private var atlas: SpriteAtlas
     private let settings: AppSettings
     var onManualStateSelected: ((AnimationState) -> Void)?
     var onOpenSettings: (() -> Void)?
     var onDisableClickThrough: (() -> Void)?
+    var onResetPosition: (() -> Void)?
+    var isAnimationPaused: (() -> Bool)?
+    var onToggleAnimationPause: (() -> Void)?
+    var onQuit: (() -> Void)?
 
     var frameIndex = 0 {
         didSet { needsDisplay = true }
@@ -59,6 +63,13 @@ final class SpriteOverlayView: NSView {
             width: atlas.cellSize.width * scale,
             height: atlas.cellSize.height * scale + bubbleHeight
         )
+    }
+
+    func replaceAtlas(_ newAtlas: SpriteAtlas) {
+        atlas = newAtlas
+        frameIndex = 0
+        updateFrameSize()
+        needsDisplay = true
     }
 
     override func draw(_ dirtyRect: NSRect) {
@@ -127,8 +138,23 @@ final class SpriteOverlayView: NSView {
 
     override func rightMouseDown(with event: NSEvent) {
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Settings...", action: #selector(openSettingsFromMenu), keyEquivalent: ""))
-        menu.addItem(NSMenuItem(title: "Disable Click-through", action: #selector(disableClickThroughFromMenu), keyEquivalent: ""))
+        let settingsItem = NSMenuItem(title: "Settings...", action: #selector(openSettingsFromMenu), keyEquivalent: "")
+        settingsItem.target = self
+        menu.addItem(settingsItem)
+
+        let disableClickThroughItem = NSMenuItem(title: "Disable Click-through", action: #selector(disableClickThroughFromMenu), keyEquivalent: "")
+        disableClickThroughItem.target = self
+        menu.addItem(disableClickThroughItem)
+
+        let pauseTitle = isAnimationPaused?() == true ? "Resume Animation" : "Pause Animation"
+        let pauseItem = NSMenuItem(title: pauseTitle, action: #selector(toggleAnimationPauseFromMenu), keyEquivalent: "")
+        pauseItem.target = self
+        menu.addItem(pauseItem)
+
+        let resetPositionItem = NSMenuItem(title: "Reset Position", action: #selector(resetPositionFromMenu), keyEquivalent: "")
+        resetPositionItem.target = self
+        menu.addItem(resetPositionItem)
+
         menu.addItem(NSMenuItem.separator())
 
         for state in AnimationState.allCases {
@@ -137,6 +163,12 @@ final class SpriteOverlayView: NSView {
             item.target = self
             menu.addItem(item)
         }
+
+        menu.addItem(NSMenuItem.separator())
+        let quitItem = NSMenuItem(title: "Quit Codex Pet Overlay", action: #selector(quitFromMenu), keyEquivalent: "")
+        quitItem.target = self
+        menu.addItem(quitItem)
+
         NSMenu.popUpContextMenu(menu, with: event, for: self)
     }
 
@@ -148,9 +180,21 @@ final class SpriteOverlayView: NSView {
         onDisableClickThrough?()
     }
 
+    @objc private func toggleAnimationPauseFromMenu() {
+        onToggleAnimationPause?()
+    }
+
+    @objc private func resetPositionFromMenu() {
+        onResetPosition?()
+    }
+
     @objc private func selectAnimation(_ sender: NSMenuItem) {
         guard let rawValue = sender.representedObject as? String,
               let state = AnimationState(rawValue: rawValue) else { return }
         onManualStateSelected?(state)
+    }
+
+    @objc private func quitFromMenu() {
+        onQuit?()
     }
 }

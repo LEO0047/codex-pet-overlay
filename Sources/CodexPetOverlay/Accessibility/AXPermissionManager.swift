@@ -6,8 +6,9 @@ enum AXPermissionManager {
         AXIsProcessTrusted()
     }
 
-    static func requestPermission() {
+    @discardableResult
+    static func requestPermission() -> Bool {
         let options = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String: true] as CFDictionary
-        _ = AXIsProcessTrustedWithOptions(options)
+        return AXIsProcessTrustedWithOptions(options)
     }
 }

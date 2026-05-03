@@ -29,6 +29,14 @@ final class OverlayPanelController {
         panel.setFrameOrigin(clampedOrigin())
     }
 
+    func resetPosition() {
+        panel.setContentSize(spriteView.frame.size)
+        let origin = defaultVisibleOrigin()
+        settings.windowOriginX = Double(origin.x)
+        settings.windowOriginY = Double(origin.y)
+        panel.setFrameOrigin(origin)
+    }
+
     private func configurePanel() {
         panel.title = "Codex Pet Overlay"
         panel.isOpaque = false
@@ -48,13 +56,31 @@ final class OverlayPanelController {
             return saved
         }
 
-        let primary = NSScreen.main?.visibleFrame ?? NSRect(x: 80, y: 80, width: 1200, height: 800)
-        let fallback = NSPoint(
-            x: primary.maxX - spriteView.frame.width - 48,
-            y: primary.minY + 120
-        )
+        let fallback = defaultVisibleOrigin()
         settings.windowOriginX = Double(fallback.x)
         settings.windowOriginY = Double(fallback.y)
         return fallback
+    }
+
+    private func defaultVisibleOrigin() -> NSPoint {
+        let primary = NSScreen.main?.visibleFrame ?? NSRect(x: 80, y: 80, width: 1200, height: 800)
+        let margin: CGFloat = 48
+        let targetY = primary.minY + 120
+        let x = clamped(
+            primary.maxX - spriteView.frame.width - margin,
+            lowerBound: primary.minX + margin,
+            upperBound: primary.maxX - spriteView.frame.width
+        )
+        let y = clamped(
+            targetY,
+            lowerBound: primary.minY + margin,
+            upperBound: primary.maxY - spriteView.frame.height
+        )
+        return NSPoint(x: x, y: y)
+    }
+
+    private func clamped(_ value: CGFloat, lowerBound: CGFloat, upperBound: CGFloat) -> CGFloat {
+        guard upperBound >= lowerBound else { return lowerBound }
+        return min(max(value, lowerBound), upperBound)
     }
 }

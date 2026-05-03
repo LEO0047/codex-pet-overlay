@@ -44,6 +44,10 @@ cp "$EXECUTABLE" "$MACOS/$PRODUCT_NAME"
 cp "$ROOT_DIR/Resources/Info.plist" "$CONTENTS/Info.plist"
 cp -R "$ROOT_DIR/Assets" "$RESOURCES/Assets"
 cp -R "$ROOT_DIR/config" "$RESOURCES/config"
+if [[ -d "$ROOT_DIR/output/lucy-v2/run/overlay-highres" ]]; then
+  mkdir -p "$RESOURCES/output/lucy-v2/run"
+  cp -R "$ROOT_DIR/output/lucy-v2/run/overlay-highres" "$RESOURCES/output/lucy-v2/run/overlay-highres"
+fi
 
 if [[ -f "$ROOT_DIR/Resources/AppIcon.icns" ]]; then
   cp "$ROOT_DIR/Resources/AppIcon.icns" "$RESOURCES/AppIcon.icns"
